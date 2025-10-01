@@ -1,0 +1,53 @@
+###############################
+# Monorepo Node / Vite / Prisma
+###############################
+
+# Dependências
+node_modules/
+
+# Builds front
+dist/
+dist-ssr/
+build/
+
+# Prisma
+prisma/*.db
+*.db-journal
+generated/
+API/generated/
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor / SO
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+!/.vscode/extensions.json
+
+# Coverage / tests
+coverage/
+.nyc_output/
+
+# Misc
+*.local
+*.tgz
+
+# Lockfiles (mantenha apenas os que realmente usar)
+# Se quiser padronizar um gerenciador, remova os outros.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
